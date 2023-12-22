@@ -116,7 +116,7 @@ To run tests, use the following command:
 adonis test
 ```
 
-Here's also a documentation of some tests that i did [Test](TC-API-Test) 
+Here's also a documentation of some tests that i did [Test](Test) 
 
 ## Contributing
 
