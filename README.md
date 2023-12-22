@@ -35,7 +35,7 @@ The Customer Support API is built with AdonisJS and is responsible for handling 
 
     ```bash
     git clone https://github.com/Ezeah/SCSP_BE.git
-    cd support-api
+    cd srf-api
     ```
 
 2. Install dependencies:
