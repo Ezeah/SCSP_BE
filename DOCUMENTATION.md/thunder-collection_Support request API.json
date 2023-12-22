@@ -1,0 +1,210 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Support request API",
+    "dateExported": "2023-12-22T17:09:49.209Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "12d5a1d8-abf7-40ac-b411-19510b172aa9",
+            "name": "User",
+            "containerId": "",
+            "created": "2023-12-22T16:23:04.965Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "d579742b-bb37-4eb9-8be6-24a37fd023e6",
+            "name": "Support request",
+            "containerId": "",
+            "created": "2023-12-22T16:23:23.372Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "bd0d7d64-a0ba-4ad8-9246-660d3c9afac7",
+            "name": "Create Requests",
+            "containerId": "d579742b-bb37-4eb9-8be6-24a37fd023e6",
+            "created": "2023-12-22T16:54:19.090Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "fc60d220-cda3-4186-8b1b-f5d2096e9c41",
+            "colId": "6319fe2f-8af3-4eea-9886-8036012a73ac",
+            "containerId": "12d5a1d8-abf7-40ac-b411-19510b172aa9",
+            "name": "Get All  Users",
+            "url": "http://127.0.0.1:3333/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-12-22T16:24:04.045Z",
+            "modified": "2023-12-22T16:25:33.479Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "81b510ec-d579-491d-9f00-e9ac17e39cf6",
+            "colId": "6319fe2f-8af3-4eea-9886-8036012a73ac",
+            "containerId": "bd0d7d64-a0ba-4ad8-9246-660d3c9afac7",
+            "name": "Create Request",
+            "url": "http://127.0.0.1:3333/SupportRequest",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-22T16:44:28.503Z",
+            "modified": "2023-12-22T16:51:20.325Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"first_name\": \"nnamdi\",\n  \"last_name\": \"ezeah\",\n  \"email\": \"ezeahnnamdi@gmail.com\",\n  \"support_message_title\": \"I'd really love to get this job\",\n  \"support_message_text\": \"I'd really love to get this job because firstly, there's a lot to learn and I'd love learn and grow in your establishment.\",\n  \"file\": \"Thank you\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0b15a1ee-1a5f-4c91-8026-9e2aacdd0a80",
+            "colId": "6319fe2f-8af3-4eea-9886-8036012a73ac",
+            "containerId": "12d5a1d8-abf7-40ac-b411-19510b172aa9",
+            "name": "Create User",
+            "url": "http://127.0.0.1:3333/user",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-12-22T16:26:15.328Z",
+            "modified": "2023-12-22T16:41:31.362Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"full_name\":\"Noble Ruth\",\n \"email\": \"noble@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a6788769-24c3-4e7e-abea-c685b781ac7c",
+            "colId": "6319fe2f-8af3-4eea-9886-8036012a73ac",
+            "containerId": "bd0d7d64-a0ba-4ad8-9246-660d3c9afac7",
+            "name": "Create Request",
+            "url": "http://127.0.0.1:3333/SupportRequest",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-12-22T16:52:27.464Z",
+            "modified": "2023-12-22T16:53:50.257Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"first_name\": \"nnamdi\",\n  \"last_name\": \"ezeah\",\n  \"email\": \"peace@gmail.com\",\n  \"support_message_title\": \"I'd really love to get this job\",\n  \"support_message_text\": \"I'd really love to get this job because firstly, there's a lot to learn and I'd love learn and grow in your establishment.\",\n  \"file\": \"Thank you\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c9fd2e1f-6d67-41c4-a0be-8e2b03e548b1",
+            "colId": "6319fe2f-8af3-4eea-9886-8036012a73ac",
+            "containerId": "12d5a1d8-abf7-40ac-b411-19510b172aa9",
+            "name": "Get User By ID",
+            "url": "http://127.0.0.1:3333/user/2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-12-22T16:34:18.013Z",
+            "modified": "2023-12-22T16:35:27.798Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "29aa3a6e-1c5c-4679-9e91-0098d061092f",
+            "colId": "6319fe2f-8af3-4eea-9886-8036012a73ac",
+            "containerId": "12d5a1d8-abf7-40ac-b411-19510b172aa9",
+            "name": "Edit User Info By ID",
+            "url": "http://127.0.0.1:3333/user/2",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2023-12-22T16:36:45.379Z",
+            "modified": "2023-12-22T16:37:42.720Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"full_name\":\"Chris smith\",\n \"email\": \"chris@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0e48ef5e-d2d1-4836-8d83-31c73a08ebd5",
+            "colId": "6319fe2f-8af3-4eea-9886-8036012a73ac",
+            "containerId": "12d5a1d8-abf7-40ac-b411-19510b172aa9",
+            "name": "Delete User By ID",
+            "url": "http://127.0.0.1:3333/user/2",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-12-22T16:38:54.599Z",
+            "modified": "2023-12-22T16:39:10.507Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6cefff89-037d-4fc1-adab-938d551f81a9",
+            "colId": "6319fe2f-8af3-4eea-9886-8036012a73ac",
+            "containerId": "d579742b-bb37-4eb9-8be6-24a37fd023e6",
+            "name": "Get All Requests",
+            "url": "http://127.0.0.1:3333/SupportRequests",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-12-22T16:43:30.837Z",
+            "modified": "2023-12-22T16:43:48.796Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "08d54ac2-c782-4c22-90bc-54582778f94f",
+            "colId": "6319fe2f-8af3-4eea-9886-8036012a73ac",
+            "containerId": "d579742b-bb37-4eb9-8be6-24a37fd023e6",
+            "name": "Get Request By ID",
+            "url": "http://127.0.0.1:3333/SupportRequest/5",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-12-22T16:55:52.649Z",
+            "modified": "2023-12-22T16:56:42.983Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "66c4e46d-2824-444c-b89f-cd6e8a253e60",
+            "colId": "6319fe2f-8af3-4eea-9886-8036012a73ac",
+            "containerId": "d579742b-bb37-4eb9-8be6-24a37fd023e6",
+            "name": "Edit Request By ID",
+            "url": "http://127.0.0.1:3333/SupportRequest/5",
+            "method": "PATCH",
+            "sortNum": 110000,
+            "created": "2023-12-22T16:58:22.588Z",
+            "modified": "2023-12-22T17:01:52.531Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"first_name\": \"nnamdi\",\n  \"last_name\": \"ezeah\",\n  \"email\": \"ezeahnnamdi@gmail.com\",\n  \"support_message_title\": \"I'd really love to get this job\",\n  \"support_message_text\": \"I'd really love to get this job because firstly, there's a lot to learn and I'd love learn and grow in your establishment.\",\n  \"file\":\"I look forward to talking about this opportunity with you.\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0a96f64e-9550-445b-8cbf-43360bbc90e7",
+            "colId": "6319fe2f-8af3-4eea-9886-8036012a73ac",
+            "containerId": "d579742b-bb37-4eb9-8be6-24a37fd023e6",
+            "name": "Delete Request By ID",
+            "url": "http://127.0.0.1:3333/SupportRequest/1",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2023-12-22T17:02:37.399Z",
+            "modified": "2023-12-22T17:03:09.026Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

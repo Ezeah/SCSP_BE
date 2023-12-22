@@ -1,0 +1,296 @@
+{
+    "info": {
+        "_postman_id": "c8bccdd1-6f39-4781-b9f9-688abc7dc337",
+        "name": "Support request API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "User",
+            "item": [
+                {
+                    "name": "Get All  Users",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:3333/users",
+                            "path": [
+                                "users"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "3333"
+                        }
+                    }
+                },
+                {
+                    "name": "Create User",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:3333/user",
+                            "path": [
+                                "user"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "3333"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n \"full_name\":\"Noble Ruth\",\n \"email\": \"noble@gmail.com\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Get User By ID",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:3333/user/2",
+                            "path": [
+                                "user",
+                                "2"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "3333"
+                        }
+                    }
+                },
+                {
+                    "name": "Edit User Info By ID",
+                    "request": {
+                        "method": "PATCH",
+                        "url": {
+                            "raw": "http://127.0.0.1:3333/user/2",
+                            "path": [
+                                "user",
+                                "2"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "3333"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n \"full_name\":\"Chris smith\",\n \"email\": \"chris@gmail.com\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Delete User By ID",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://127.0.0.1:3333/user/2",
+                            "path": [
+                                "user",
+                                "2"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "3333"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Support request",
+            "item": [
+                {
+                    "name": "Create Requests",
+                    "item": [
+                        {
+                            "name": "Create Request",
+                            "request": {
+                                "method": "POST",
+                                "url": {
+                                    "raw": "http://127.0.0.1:3333/SupportRequest",
+                                    "path": [
+                                        "SupportRequest"
+                                    ],
+                                    "protocol": "http",
+                                    "host": [
+                                        "127",
+                                        "0",
+                                        "0",
+                                        "1"
+                                    ],
+                                    "port": "3333"
+                                },
+                                "body": {
+                                    "mode": "raw",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    },
+                                    "raw": "{\n  \"first_name\": \"nnamdi\",\n  \"last_name\": \"ezeah\",\n  \"email\": \"ezeahnnamdi@gmail.com\",\n  \"support_message_title\": \"I'd really love to get this job\",\n  \"support_message_text\": \"I'd really love to get this job because firstly, there's a lot to learn and I'd love learn and grow in your establishment.\",\n  \"file\": \"Thank you\"\n}"
+                                }
+                            }
+                        },
+                        {
+                            "name": "Create Request",
+                            "request": {
+                                "method": "POST",
+                                "url": {
+                                    "raw": "http://127.0.0.1:3333/SupportRequest",
+                                    "path": [
+                                        "SupportRequest"
+                                    ],
+                                    "protocol": "http",
+                                    "host": [
+                                        "127",
+                                        "0",
+                                        "0",
+                                        "1"
+                                    ],
+                                    "port": "3333"
+                                },
+                                "body": {
+                                    "mode": "raw",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    },
+                                    "raw": "{\n  \"first_name\": \"nnamdi\",\n  \"last_name\": \"ezeah\",\n  \"email\": \"peace@gmail.com\",\n  \"support_message_title\": \"I'd really love to get this job\",\n  \"support_message_text\": \"I'd really love to get this job because firstly, there's a lot to learn and I'd love learn and grow in your establishment.\",\n  \"file\": \"Thank you\"\n}"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get All Requests",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:3333/SupportRequests",
+                            "path": [
+                                "SupportRequests"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "3333"
+                        }
+                    }
+                },
+                {
+                    "name": "Get Request By ID",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:3333/SupportRequest/5",
+                            "path": [
+                                "SupportRequest",
+                                "5"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "3333"
+                        }
+                    }
+                },
+                {
+                    "name": "Edit Request By ID",
+                    "request": {
+                        "method": "PATCH",
+                        "url": {
+                            "raw": "http://127.0.0.1:3333/SupportRequest/5",
+                            "path": [
+                                "SupportRequest",
+                                "5"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "3333"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"first_name\": \"nnamdi\",\n  \"last_name\": \"ezeah\",\n  \"email\": \"ezeahnnamdi@gmail.com\",\n  \"support_message_title\": \"I'd really love to get this job\",\n  \"support_message_text\": \"I'd really love to get this job because firstly, there's a lot to learn and I'd love learn and grow in your establishment.\",\n  \"file\":\"I look forward to talking about this opportunity with you.\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Delete Request By ID",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://127.0.0.1:3333/SupportRequest/1",
+                            "path": [
+                                "SupportRequest",
+                                "1"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "3333"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

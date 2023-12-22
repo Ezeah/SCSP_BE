@@ -8,6 +8,7 @@ export default class extends BaseSchema {
       table.increments('id').primary()
       table.string('full_name').notNullable()
       table.string('email').notNullable().unique()
+      table.timestamps(true)
 
       /**
        * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
