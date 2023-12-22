@@ -35,27 +35,30 @@ The Customer Support API is built with AdonisJS and is responsible for handling 
 
     ```bash
     git clone https://github.com/Ezeah/SCSP_BE.git
+    ```
+    
+    ```bash
     cd srf-api
     ```
 
-2. Install dependencies:
+1. Install dependencies:
 
     ```bash
     npm install
     ```
 
-3. Configure environment variables:
+2. Configure environment variables:
 
     - Create a copy of `.env.example` and name it `.env`.
     - Set up your database connection details in the `.env` file.
 
-4. Run migrations:
+3. Run migrations:
 
     ```bash
     adonis migration:run
     ```
 
-5. Start the development server:
+4. Start the development server:
 
     ```bash
     adonis serve --dev
