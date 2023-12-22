@@ -65,8 +65,7 @@ export default class UserController {
                 id
             });
         }
-    }
-    
+    }    
 
     async delete({ response, params: { id } }: HttpContextContract) {
         const user = await User.find(id);
